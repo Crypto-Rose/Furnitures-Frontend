@@ -1,0 +1,30 @@
+<div>
+  <form [formGroup]="form" (submit)="updateProduct()">
+    <div class="form-group">
+
+      <mat-form-field class="title-name" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" class="text-name" id="name" required>
+      </mat-form-field>
+
+      <mat-form-field class="title-type" appearance="fill">
+        <mat-label>Type</mat-label>
+        <input matInput formControlName="type" class="text-type" id="type" required>
+      </mat-form-field>
+
+      <mat-form-field class="title-price" appearance="fill">
+        <mat-label>Price</mat-label>
+        <input matInput formControlName="price" class="text-price" id="price" required>
+      </mat-form-field>
+
+      <mat-form-field class="title-description" appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description" class="text-description" id="description" required></textarea>
+      </mat-form-field>
+
+      <div>
+          <button mat-raised-button color="primary" class="button">Send</button>
+      </div>
+    </div>
+  </form>
+</div>
